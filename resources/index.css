@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+}
+
+body {
+    min-width: 375px;
+    max-width: 1440px;
+}
+
+.hero {
+    background-image: 
+        url(/resources/design/images/bg-pattern-intro-mobile.svg),
+        linear-gradient(to bottom right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    
+    background-position: center;
+    background-position: 35% 35%;
+    height: 600px;
+    border-bottom-left-radius: 8rem;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.5rem 6.5% 0 6.5%;
+}
+
+.list a {
+    text-decoration: none;
+    font-size: 1.125rem;
+    color: #6d747a;
+    font-weight: 600;
+    height: 1.75rem;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    border-radius: .3rem;
+    background: #efeff151;
+    margin-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.btn {
+    font-size: 1.125rem;
+    color: #1F3E5A;
+    font-weight: 600;
+    cursor: pointer;
+    height: 1.75rem;
+    background: white;
+    border: none;
+    margin-top: 1.5rem;
+}
+
+.btn:hover {
+    color: #6d747a;
+}
+
+.button__container{
+    height: 7.8rem;
+    width: 17.25rem;
+    border-top: 1px solid #efeff151;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.login {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1F3E5A;
+    height: 3rem;
+    width: 8.56rem;
+    border: none;
+    background: white;
+    border-radius: 2rem;
+    margin-top: 1.5rem;
+}
+
+.sign__up {
+    font-size: 1.125rem;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    height: 3rem;
+    width: 8.56rem;
+    border: none;
+    background: linear-gradient(135deg, #FF8F71 0%, #FF3E55 100%);
+    border-radius: 2rem;
+    margin-top: 1.5rem;
+    
+}
+
+.sub__menu {
+    left: 5%;
+    width: 90%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 7.8rem;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.243444);
+    border-radius: 5px;
+    padding-bottom: 2rem;
+}
+
+.hero__content  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.hero__content h1 {
+    font-size: 2.25rem;
+    line-height: 1.5;
+    letter-spacing: -.1rem;
+    color: white;
+}
+
+.hero__content p {
+    font-size: 1.125rem;
+    line-height: 1.5;
+    color: white;
+    font-weight: 400;
+}
+
+.content__buttons {
+    margin-top: 3rem;
+}
+
+.start__btn {
+    height: 48px;
+    width: 137px;
+    border-radius: 2rem;
+    border: none;
+    color: #FF505C;
+    background: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.start__btn:hover {
+    color: white;
+    background: #FF505C;
+    transition: .5s;
+}
+
+.learn__btn {
+    height: 48px;
+    width: 137px;
+    border-radius: 2rem;
+    background: transparent;
+    border-color: white;
+    border-style: solid;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.learn__btn:hover {
+    color: #FF7B86;
+    background: white;
+    transition: .5s;
+}
+
+.sub {
+    display: none;
+}
