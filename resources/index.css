@@ -10,6 +10,7 @@
 }
 
 body {
+    margin: 0 auto;
     min-width: 375px;
     max-width: 1440px;
 }
@@ -22,96 +23,71 @@ body {
     height: 600px;
     border-bottom-left-radius: 6rem;
     position: relative;
+    padding: 3.5rem 5% 0 5%;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3.5rem 6.5% 0 6.5%;
-    width: 100%;
-}
-
-.sub__con {
-    display: flex;
-    flex-direction: column;
     width: 100%;
 }
 
 .sub__menu {
-    left: 5%;
-    width: 90%;
-    background: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     position: absolute;
-    top: 7.8rem;
+    top: 0;
+    margin-top: 8rem;
+    width: 90%;
+    background: #fff;
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.243444);
     border-radius: 5px;
-    padding-bottom: 2rem;
-}
-
- #sub__menu {
-    display: none;
- }
-
-.list a {
-    text-decoration: none;
-    font-size: 1.125rem;
-    color: #6d747a;
-    font-weight: 600;
-    height: 1.75rem;
     text-align: center;
-    margin-top: 1.5rem;
+    padding: 0 1.5rem;
 }
 
-#list__con, #list__con1, #list__con2, #list__con3 {
-    display: none;
+.button__con {
+    margin: 1.5rem 0;
 }
 
-.list__container {
-    width: 80%;
-    align-self: center;
-    background: #efeff151;
-    border-radius: .3rem;
-    margin-top: 1.5rem;
-    display: none;
-}
-
-.list {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 1.5rem;
+.btn {
+    border: none;
+    background: #fff;
+    font-size: 1.125rem;   
+    font-weight: 600;
 }
 
 .white__arrow {
     display: none;
 }
 
-.btn  {
-    font-size: 1.125rem;
-    font-weight: 600;
-    cursor: pointer;
-    height: 1.75rem;
-    background: white;
-    border: none;
-    margin-top: 1.5rem;
-    color: #1F3E5A;
-}
 
-.btn:hover {
-    color: #6d747a;
-}
-
-.button__container{
-    width: 80%;
-    border-top: 1px solid #efeff151;
+.list {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    background: #2d2e4009;
+    margin-top: 1.5rem; 
+    border-radius: .3125rem;
+    padding: 1rem 0;
+}
+
+.list a {
+    text-decoration: none;
+    color: #1F3E5A;
+    line-height: 2.2;
+    font-weight: 600;
+}
+
+.connect__con {
+    margin-bottom: 1.5rem;
+}
+
+.login__container {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin-top: 1.5rem;
+    align-items: center;
+    margin-bottom: 2rem;
+    border-top: 2px solid #2d2e4009;
 }
 
 .login {
@@ -123,7 +99,6 @@ body {
     border: none;
     background: white;
     border-radius: 2rem;
-    margin-top: 1.5rem;
     cursor: pointer;
 }
 
@@ -135,7 +110,6 @@ body {
     border: none;
     background: linear-gradient(135deg, #FF8F71 0%, #FF3E55 100%);
     border-radius: 2rem;
-    margin-top: 1.5rem;
     cursor: pointer;
 }
 
@@ -370,103 +344,142 @@ footer a {
     display: block;
 }
 
-footer a:hover {
-
-}
-
 @media only screen and (min-width: 850px) {
 
-    .logo {
-        margin-right: 4rem;
+    .hero {
+        background-image: 
+            url(/resources//images/bg-pattern-intro-desktop.svg)
+            linear-gradient(to bottom right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+        background-size: 200%;
+        background-position: 20% 52%;
     }
 
-    .menu__icon {
+    .hamburger {
         display: none;
-    }
-
-    #sub__menu {
-        display: block;
-    }
-
-    .sub__con {
-        display: flex;
-        flex-direction: row;
-    }
-
-    #sub__menu  {
-        width: 100%;
     }
 
     .sub__menu {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
         position: initial;
-        min-width: 100%;
+        top: initial;
+        margin-top: 0;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
         padding: 0;
+        margin-left: 5%;
         background: transparent;
-        border: none;
         box-shadow: none;
     }
-
-    .button__container {
-        flex-direction: row;
-        justify-content: flex-end;
-        border: none;
-    }
-
-    .list a{
-        text-align: left;
-    }
-
-    .list__container {
-        max-width: 10.5rem;
-        padding-left: 1.5rem;
-        background: white;
-        box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.243444);
+    
+    .list {
+        margin-left: -1rem;
         position: absolute;
+        width: 10rem;
+        text-align: left;
+        padding-left: 5%;
+        background: white;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1rem;
     }
 
-    #list__con1 {
-        margin: 22rem 0 0 -.7rem;
+    .list a {
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 500;
     }
 
-    #list__con2 {
-        margin: 18.8rem 0 0 5.8rem;
+    .list a:hover {
+        font-weight: 700;
+        color: #2D2E40;
     }
 
-    #list__con3 {
-        margin: 15.5rem 0 0 12rem;
+    .con__wrap {
+        display: flex;
+        align-items: center;
+        position: relative;
     }
 
-    .white__arrow {
-        margin: 0 .5rem;
+    .company__con {
+        padding: 0 2rem;
+    }
+
+    .button__con {
+        margin: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .connect__con {
+        margin: 0;
     }
 
     .btn {
-        display: flex;
-        align-items: center;
-        margin: 0 .5rem;
         background: transparent;
+        color: #ffff;
+        margin-right: .5rem;
+        font-family: 'Ubuntu',sans-serif;
+        font-weight: 700;
+        font-size: 1rem;
+    }
+
+    .btn:hover {
+        text-shadow: 0 2px 3px #000;
+        border-bottom: 2px solid #fff;
     }
 
     .white__arrow {
         display: block;
     }
 
-    .down__arrow {
+    .red__arrow {
         display: none;
     }
+    
 
-    .button__container {
+    .login__container {
+        flex-direction: row;
         margin: 0;
+        border: none;
     }
 
     .login {
-        margin: 0;
+        background: transparent;
+        color: #fff;
+        font-weight: 700;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1rem;
     }
 
     .sign__up {
-        margin: 0;
+        background: white;
+        color: #FF3E55;
+        font-weight: 700;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1rem;
     }
+
+    .sign__up:hover {
+        background: #FF7B86;
+        color: #fff;
+    }
+
+    .hero__content h1 {
+        font-size: 4rem;
+    }
+
+    h1 br {
+        display: none;
+    }
+
+    .hero__content p {
+        font-size: 1.25rem;
+    }
+
+    .hero__content p br {
+        display: none;
+    }
+    
+
 }
+
+
+

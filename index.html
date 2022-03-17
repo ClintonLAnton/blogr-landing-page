@@ -11,45 +11,58 @@
     <section class="hero">
         <div class="navbar">
             <div class="logo"><img  src="/resources/images/logo.svg" alt="logo"></div>
-            <div id="sub__menu">
-                <div class="sub__menu">
-                    <div class="sub__con">
-                    <button id="toggle__list" class="btn" onclick="toggleBtn(1); toggleIcon(1)">Product <img class="down__arrow" id="down__arrow1" src="/resources/images/icon-arrow-dark.svg" alt="down arrow"><img class="white__arrow" src="/resources/images/icon-arrow-light.svg" alt="down arrow"></button>
-                    <div class="list__container" id="list__con1">
+            <div class="sub__menu" id="sub__menu">
+                <div class="con__wrap">
+                <div class="product__con">
+                        <div class="button__con">
+                            <button id="toggle__list" class="btn" onclick="toggleBtn(1); toggleIcon(3)">Product</button>
+                            <svg class="red__arrow" xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke="#FF7B86" stroke-width="2" d="M1 1l4 4 4-4"/></svg>
+                            <svg class="white__arrow" xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path  fill="none" stroke="#fff" stroke-width="2" opacity=".75" d="M1 1l4 4 4-4"/></svg>
+                        </div>
                         <div class="list" id="list" onclick="toggleBtn(1)">
-                            <a class="link" href="#">Overview</a>
-                            <a class="link" href="#">Pricing</a>
-                            <a class="link" href="#">Marketplace</a>
-                            <a class="link" href="#">Features</a>
-                            <a class="link" href="#">Integrations</a>
+                            <a href="#">Overview</a>
+                            <a href="#">Pricing</a>
+                            <a href="#">Marketplace</a>
+                            <a href="#">Features</a>
+                            <a href="#">Integrations</a>
                         </div>
                     </div>
-                    <button id="toggle__list" class="btn" onclick="toggleBtn(2); toggleIcon(2)">Company <img class="down__arrow" id="down__arrow2" src="/resources/images/icon-arrow-dark.svg" alt="down arrow"><img class="white__arrow" src="/resources/images/icon-arrow-light.svg" alt="down arrow"></button>
-                    <div class="list__container" id="list__con2">
+                    <div class="company__con">
+                        <div class="button__con">
+                            <button id="toggle__list" class="btn" onclick="toggleBtn(2); toggleIcon(3)">Company</button>
+                            <svg class="red__arrow" xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke="#FF7B86" stroke-width="2" d="M1 1l4 4 4-4"/></svg>
+                            <svg class="white__arrow" xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke="#FFF" stroke-width="2" opacity=".75" d="M1 1l4 4 4-4"/></svg>
+                        </div>
                         <div class="list" id="list" onclick="toggleBtn(2)">
-                            <a class="link" href="#">About</a>
-                            <a class="link" href="#">Team</a>
-                            <a class="link" href="#">Blog</a>
-                            <a class="link" href="#">Careers</a>
+                            <a href="#">About</a>
+                            <a href="#">Team</a>
+                            <a href="#">Blog</a>
+                            <a href="#">Careers</a>
                         </div>
                     </div>
-                    <button id="toggle__list" class="btn" onclick="toggleBtn(3); toggleIcon(3)">Connect <img class="down__arrow" id="down__arrow3" src="/resources/images/icon-arrow-dark.svg" alt="down arrow"><img class="white__arrow" src="/resources/images/icon-arrow-light.svg" alt="down arrow"></button>
-                    <div class="list__container" id="list__con3">
+                    <div class="connect__con">
+                        <div class="button__con">
+                            <button id="toggle__list" class="btn" onclick="toggleBtn(2); toggleIcon(3)">Connect</button>
+                            <svg class="red__arrow" xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke="#FF7B86" stroke-width="2" d="M1 1l4 4 4-4"/></svg>
+                            <svg class="white__arrow" xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke="#FFF" stroke-width="2" opacity=".75" d="M1 1l4 4 4-4"/></svg>
+                        </div>
                         <div class="list" id="list" onclick="toggleBtn(3)">
-                            <a class="link" href="#">Contact</a>
-                            <a class="link" href="#">Newsletter</a>
-                            <a class="link" href="#">LinkedIn</a>
+                            <a href="#">Contact</a>
+                            <a href="#">Newsletter</a>
+                            <a href="#">LinkedIn</a>
                         </div>
-                    </div>
-                    </div>
-                    <div class="button__container">
-                        <button class="login link">Login</button>
-                        <button class="sign__up link">Sign Up</button> 
                     </div>
                 </div>
+                <div class="login__container">
+                    <button class="login">Login</button>
+                    <button class="sign__up">Sign Up</button> 
+                </div>
             </div>
-            <div class="menu__icon"><img id="menu" src="/resources/images/icon-hamburger.svg" alt="hamburger menu" onclick="toggleSvg(); toggleSub()"></div>
+            <div class="hamburger">
+                <svg width="32" height="18" xmlns="http://www.w3.org/2000/svg"><g fill="#FFF" fill-rule="evenodd"><path d="M0 0h32v2H0zM0 8h32v2H0zM0 16h32v2H0z"/></g></svg>
+            </div>
         </div>
+        
 
         <div class="hero__content">
             <h1>A modern<br> publishing platform</h1>
@@ -134,7 +147,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer-->
     <script src="/resources/index.js"></script>
 </body>
 </html>
